@@ -31,7 +31,7 @@ gem "ember-rails"
 
 group :development, :test do
   gem "rspec-rails"
-  gem "database_cleaner"
+  gem "database_cleaner", git: 'git@github.com:bmabey/database_cleaner.git'
   gem "factory_girl_rails"
   gem "qunit-rails"
 end

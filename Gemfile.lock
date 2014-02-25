@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:bmabey/database_cleaner.git
+  revision: b254ce57bdeea927e514a486aedc2ac97199324b
+  specs:
+    database_cleaner (1.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,7 +47,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    database_cleaner (1.2.0)
     diff-lcs (1.2.5)
     ember-data-source (0.14)
       ember-source
@@ -150,7 +155,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  database_cleaner
+  database_cleaner!
   ember-rails
   factory_girl_rails
   jbuilder (~> 1.2)
