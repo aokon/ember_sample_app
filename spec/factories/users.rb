@@ -2,8 +2,7 @@
 
 FactoryGirl.define do
   factory :user do
-    name "MyString"
-    password "MyString"
-    token "MyString"
+    sequence(:name) { |t| "Dummy User #{t}" } 
+    sequence(:password) { |t| "12312#{t}" } 
   end
 end
