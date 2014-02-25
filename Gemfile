@@ -27,10 +27,13 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem "ember-rails"
+
 group :development, :test do
   gem "rspec-rails"
   gem "database_cleaner"
   gem "factory_girl_rails"
+  gem "qunit-rails"
 end
 
 group :doc do
