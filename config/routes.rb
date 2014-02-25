@@ -6,6 +6,8 @@ EmberSampleApp::Application.routes.draw do
     end
   end
 
+  post '/token' => "api/v1/sessions#create"
+
   root to: "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -2,8 +2,14 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require ember-simple-auth
 #= require_self
 #= require ember_sample_app
+
+Ember.Application.initializer
+  name: 'authentication',
+  initialize: (container, application) ->
+    Ember.SimpleAuth.setup(container, application)
 
 # for more details see: http://emberjs.com/guides/application/
 window.EmberSampleApp = Ember.Application.create()

@@ -7,7 +7,7 @@ describe Api::V1::SessionsController do
 
     context "valid authentication" do
 
-      before { post :create,  name: user.name, password: user.password, format: :json }
+      before { post :create,  username: user.name, password: user.password, format: :json }
 
       it "should be ok" do
         response.should be_ok
@@ -21,7 +21,7 @@ describe Api::V1::SessionsController do
 
     context "invalid authentication" do
       it "returns 401" do
-        post :create, name: "dummyy", password: "", format: :json
+        post :create, username: "dummyy", password: "", format: :json
         response.code.should == '401'
       end
     end

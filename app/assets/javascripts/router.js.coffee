@@ -2,4 +2,6 @@
 
 EmberSampleApp.Router.map ()->
   # @resource('posts')
+  @route 'login', path: "/login"
+  @route 'dashboard', path: "/dashboard"
 
