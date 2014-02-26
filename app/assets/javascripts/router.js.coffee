@@ -2,4 +2,5 @@
 
 EmberSampleApp.Router.map ()->
   # @resource('posts')
+  @route 'contacts', path: '/'
 
