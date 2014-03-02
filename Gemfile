@@ -25,6 +25,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 
 gem "ember-rails"
+gem 'ember-source', '1.4.0'
 
 group :development, :test do
   gem "rspec-rails"
