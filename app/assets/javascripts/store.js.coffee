@@ -2,6 +2,9 @@
 
 DS.ActiveModelAdapter.reopen({
   namespace: 'api/v1'
+  #temporary solution see https://github.com/emberjs/ember-rails/pull/340
+  headers:
+    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
 })
 
 EmberSampleApp.Store = DS.Store.extend
